@@ -1,76 +1,18 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Responsive Card Layout</title>
-  <style>
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
+Responsive Card Layout
+This project features a responsive card layout built with HTML and CSS. The layout is designed to display a collection of cards that adjust according to the screen size, making it suitable for both desktop and mobile devices.
 
-    .card {
-      width: 300px;
-      height: 300px;
-      margin: 10px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      overflow: hidden;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      transition: box-shadow 0.3s ease-in-out;
-    }
+Features
+Responsive Design: The card layout adapts to different screen sizes using media queries, ensuring an optimal viewing experience on both mobile and desktop devices.
+Hover Effects: Cards feature a subtle shadow effect that enhances the user interface when hovered over, providing visual feedback.
+Image Support: Each card includes an image section with an automatic aspect ratio and cover style for images to ensure a consistent appearance.
+Content Area: Each card contains a title and a description, making it easy to present information in a structured format.
 
-    .card:hover {
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
+Technologies Used
+HTML: For structuring the content of the cards.
+CSS: For styling the layout, including flexbox for responsive design, transitions for hover effects, and media queries for different screen sizes.
 
-    .card img {
-      width: 100%;
-      height: 150px;
-      object-fit: cover;
-    }
-
-    .card .content {
-      padding: 10px;
-    }
-
-    @media screen and (max-width: 768px) {
-      .card {
-        width: calc(50% - 20px);
-      }
-    }
-
-    @media screen and (max-width: 480px) {
-      .card {
-        width: calc(100% - 20px);
-      }
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="card">
-      <img src="image1.jpg" alt="Image 1">
-      <div class="content">
-        <h3>Title 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-    </div>
-    <div class="card">
-      <img src="image2.jpg" alt="Image 2">
-      <div class="content">
-        <h3>Title 2</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-    </div>
-    <div class="card">
-      <img src="image3.jpg" alt="Image 3">
-      <div class="content">
-        <h3>Title 3</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-    </div>
-    <!-- Add more cards as needed -->
-  </div>
-</body>
-</html>
+Installation
+To view the card layout, follow these steps:
+Clone the repository or download the code.
+Open the index.html file in your preferred web browser.
+Ensure that the image files (e.g., image1.jpg, image2.jpg, image3.jpg) are in the same directory or update the src attributes of the img tags to point to the correct image paths.
